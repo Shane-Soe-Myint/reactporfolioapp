@@ -1,0 +1,694 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif, 'Arial Narrow', Arial;
+}
+
+:root {
+    --btnText-fontSize: 12px;
+    --font-weight: 700px;
+    --hover-color: rgba(211, 211, 211, 0.308);
+    --light-blackText: rgb(44, 44, 44);
+    --seconds-bigText: 30px;
+    --color-textLightGray: rgb(138, 138, 138);
+    --animation--trasition: all .4s ease-in-out;
+}
+
+.navBar {
+    background-color: #222324;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 18px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navBar, .navBarMenu, .navBarLogin, .homeNameBtn, .contactLabel, .boxContainer, .contactIconContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBarMenu {
+    /* width: 290px; */
+    font-size: 14px;
+}
+
+.navBarMenu a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger .fa-bars {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navBarMenu.open {
+    transform: translate(0);
+}
+
+.navBarLogin.open {
+    transform: translate(0);
+    /* bottom: 150px; */
+}
+
+/* ---------------------------Home------------------------------------ */
+
+.homeColor {
+    width: 100%;
+    height: 280px;
+    background-color: #222324;
+}
+
+.homeImg {
+    width: 200px;
+}
+
+.homeInside {
+    transform: translateY(-25%);
+    width: 70%;
+    margin: auto;
+}
+
+.homeNameBtn {
+    padding: none;
+    margin-top: 40px;
+}
+
+.homeNameBtn button {
+    background-color: #222324;
+    padding: 14px 21px;
+    color: #fff;
+    border-radius: 10px;
+    /* font-size: var(--btnText-fontSize); */
+    width: 120px;
+    font-weight: 600;
+}
+
+.postFlow {
+    display: flex;
+    margin-top: 15px;
+}
+
+.postFlow h4 {
+    margin-right: 30px;
+    word-spacing: 5px;
+}
+
+.postFlow h4 span {
+    font-weight: normal;
+    color: rgb(158 158 158);
+}
+
+.homeP h3, .homeP div {
+    font-weight: normal;
+    color: var(--color-textLightGray);
+    margin-top: 30px;
+    line-height: 33px;
+    letter-spacing: .8px;
+}
+
+.homeP .moreAboutMe {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hiddenH {
+    font-size: 18px;
+    margin-top: 10px;
+    transform: translateY(-300%);
+    transition: var(--animation--trasition);
+}
+
+.visibleV {
+    transform: translateY(0);
+    transition: var(--animation--trasition);
+}
+
+.homeMoreBtn {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.homeMoreBtn button {
+    padding: 15px 18px;
+    font-weight: 700;
+    font-size: var(--btnText-fontSize);
+    background-color: transparent;
+    color: #000;
+    border-radius: 10px;
+}
+
+.homeMoreBtn button:hover {
+    background-color: var(--hover-color);
+}
+
+.homeMoreBtn button > .fa-arrow-right, .homeMoreBtn button .fa-arrow-up {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+/* .lessAboutMeBtn {
+    display: none;
+} */
+
+/* ---------------------------Projects----------------------------------- */
+
+.projectsContainer {
+    padding: 0 35px;
+}
+
+.projectsContainer h1 {
+    font-size: var(--seconds-bigText);
+    color: var(--light-blackText);
+    margin-bottom: 35px;
+}
+
+.projectsContainer a img {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: var(--animation--trasition);
+}
+
+.pjCardsContainer .cardOne {
+    margin-bottom: 20px;
+}
+
+.pjCardBtns a button {
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+    background: rgb(34,193,195);
+    background: linear-gradient(61deg, rgba(34,193,195,1) 45%, rgba(174,236,215,1) 100%);
+}
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+.pjCardBtns a button:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: var(--animation--trasition);
+}
+
+.pjCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+}
+
+.pjCardsContainer div {
+    width: 289px;
+}
+
+.pjCardsContainer h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.pjCardsContainer h1 .fa-react {
+    color: #5ED4F3;
+    font-size: 20px;
+}
+
+.pjCardsContainer .cardOne span, .insideBoxContainer span {
+    line-height: 20px;
+    color: var(--color-textLightGray);
+    word-spacing: 5px;
+}
+
+.pjCardsContainer div img {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.pjCardsContainer div img:hover {
+    transform: translateY(-5px);
+    transition: var(--animation--trasition);
+}
+
+/* ---------------------------Contact----------------------------------- */
+.contactContainer {
+    grid-gap: 15px;
+    margin-top: 180px;
+}
+
+.contactLabel {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactLabel h1 {
+    font-size: 50px;
+    color: var(--light-blackText);
+}
+
+.contactH3 {
+    font-weight: normal;
+    color: var(--color-textLightGray);
+    margin-top: 15px;
+    line-height: 33px;
+    letter-spacing: .8px;
+    font-style: italic;
+    word-spacing: 3px;
+}
+
+.boxContainer {
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 100px 30px;
+}
+
+.formGroup {
+    margin-top: 10px;
+    width: 640px;
+    padding: 26px 60px;
+    position: relative;
+    /* background-color: lightblue; */
+}
+
+.formName, .email {
+    display: flex;
+}
+
+.formName div span, .email span, .textArea span {
+    color: red;
+}
+
+.formName div, .email {
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.formName div label, .email label, .textArea label, textarea {
+    color: #000;
+    font-size: 14px;
+    opacity: .9;
+}
+
+.formName div input, .email input, textarea {
+    font-size: 14px;
+    padding: 14px 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(179, 178, 178);
+}
+
+.email, .textArea {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 500px;
+    height: 120px;
+    resize: none;
+}
+
+.formGroup .formBtn {
+    display: flex;
+    justify-content: flex-end;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.formGroup .formBtn button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: var(--light-blackText);
+    cursor: pointer;
+}
+
+
+.insideBoxContainer {
+    width: 550px;
+    height: 450px;
+    background-color: var(--light-blackText);
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: -10px;
+    padding: 70px;
+    color: #fff;
+}
+
+.insideBoxContainer h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.insideBoxContainer span {
+    color: rgb(238, 237, 237);
+    opacity: .8;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contactIconContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.contactIconContainer i {
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+.contactIconContainer .fa-phone, .fa-envelope, .fa-facebook {
+    color: #fff;
+}
+
+.contactIconContainer a span {
+    font-family:  "Roboto",sans-serif;
+    letter-spacing: .5px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 1;
+}
+
+/* ---------------------------Footer----------------------------------- */
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C2C2C;
+    width: 100%;
+    height: 80px;
+}
+
+.footerContainer .footerMenu {
+    display: flex;
+}
+
+.footerContainer .footerMenu a {
+    margin: 0 10px;
+}
+
+.footerContainer .footerMenu a h4 {
+    color: #fff;
+}
+
+/* --------------------------@media------------------------ */
+/* --------------------------@media------------------------ */
+/* --------------------------@media------------------------ */
+/* --------------------------@media------------------------ */
+
+@media (max-width: 1290px) {
+    .pjCardsContainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3%;
+    }
+}
+
+@media (max-width: 1117px) {
+    .contactContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .boxContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .formGroup .formBtn {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 985px) {
+    .pjCardsContainer {
+        grid-gap: 1%;
+    }
+    .projectsContainer a img {
+        width: 280px;
+    }
+}
+
+@media (max-width: 985px) {
+    .projectsContainer a img {
+        width: 260px;
+    }
+    .pjCardsContainer div {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 959px) {
+    .navBar {
+        padding: 20px;
+    }
+    .navBarMenu {
+        transform: translateX(200%);
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 450px;
+        background-color: lightgray;
+        transition: all .4s ease-in-out;
+        border-bottom-left-radius: 10px;
+    }
+    .navBarMenu h4 {
+        transform: translateY(-50px);
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+    .navBarMenu h4:hover {
+        color: #000;
+        cursor: pointer;
+    }
+    /* .hamburger .fa-xmark {
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 2;
+    } */
+    .navBarLogin {
+        position: fixed;
+        transform: translateX(200%);
+        margin-top: 600px;
+        right: 100px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger .fa-bars {
+        display: block;
+        position: relative;
+    }
+}
+
+@media (max-width: 919px) {
+    .pjCardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+    .pjCardsContainer a img {
+        width: 390px;
+    }
+}
+
+@media (max-width: 880px) {
+    .pjCardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+    .pjCardsContainer a img {
+        width: 370px;
+    }
+}
+
+@media (max-width: 840px) {
+    .pjCardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+    .pjCardsContainer a img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .pjCardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+    .pjCardsContainer a img {
+        width: 320px;
+    }
+}
+
+@media (max-width: 757px) {
+    .homeInside img {
+        display: flex;
+        margin: 50px auto;
+    }
+    .contactContainer {
+        margin: 50px auto;
+    }
+    .contactH3 h3 {
+        margin-bottom: 50px;
+    }
+    .boxContainer {
+        margin: 0;
+        width: 600px;
+    }
+    textarea {
+        width: 480px;
+    }
+}
+
+@media (max-width: 740px) {
+    .pjCardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+    .pjCardsContainer a img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 710px) {
+    .pjCardsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pjCardsContainer .cardOne {
+        display: flex;
+        flex-direction: column;
+        margin: 15px auto;
+    }
+    .pjCardsContainer a img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 650px) {
+    .boxContainer {
+        position: relative;
+    }
+    .boxContainer, .formGroup {
+        width: 500px;
+    }
+    textarea {
+        width: 360px;
+    }
+    .formBtn {
+        width: 100%;
+    }
+    .formBtn button {
+        position: absolute;
+        right: 50px;
+    }
+    .insideBoxContainer {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 530px) {
+    .pjCardsContainer a img {
+        width: 100%;
+    }
+    .contactH3 h3 {
+        font-size: 18px;
+    }
+    .contactContainer {
+        display: flex;
+        margin: 50px auto;
+    }
+    .boxContainer {
+        width: 90vw;
+        margin: auto;
+    }
+}
+
+@media (max-width: 513px) {
+    .contactLabel {
+        width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+    .contactH3 {
+        width: 80vw;
+    }
+    .formGroup {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 510px) {
+    .contactH3 h3 {
+        font-size: 15px;
+    }
+    textarea {
+        width: 95%;
+    }
+    .formBtn {
+        width: 100%;
+    }
+    .formBtn button {
+        position: absolute;
+        right: 0px;
+    }
+    .insideBoxContainer {
+        margin-top: 25%;
+    }
+    .contactIconContainer a span, .contactIconContainer a i {
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 377px) {
+    .contactContainer {
+        margin-left: 90px;
+    }
+}
+
