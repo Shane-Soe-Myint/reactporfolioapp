@@ -90,7 +90,7 @@ export const ProjectCards = () => {
             </a>
 
             <div className="pjCardBtns">
-              <a href=""><button>Source Code</button></a>
+              <a href="https://github.com/Shane-Soe-Myint/reactporfolioapp"><button>Source Code</button></a>
               <a href="https://reactporfolioapp.netlify.app/#projects"><button>Live</button></a>
             </div>
 
