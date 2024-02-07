@@ -38,6 +38,10 @@ body {
     align-items: center;
 }
 
+.navLogo {
+    font-family: cursive;
+}
+
 .navBarMenu {
     /* width: 290px; */
     font-size: 14px;
@@ -130,6 +134,11 @@ body {
     overflow: hidden;
 }
 
+.moreAboutMe .moreAboutP {
+    margin-top: 0;
+    font-size: 19px;
+}
+
 .hiddenH {
     font-size: 18px;
     margin-top: 10px;
@@ -188,10 +197,6 @@ body {
     transition: var(--animation--trasition);
 }
 
-.pjCardsContainer .cardOne {
-    margin-bottom: 20px;
-}
-
 .pjCardBtns a button {
     padding: 5px 8px;
     border-radius: 5px;
@@ -232,6 +237,10 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2%;
+}
+
+.pjCardsContainer .cardOne {
+    margin-bottom: 30px;
 }
 
 .pjCardsContainer div {
@@ -339,6 +348,37 @@ textarea {
     width: 500px;
     height: 120px;
     resize: none;
+}
+
+.formName div {
+    position: relative;
+}
+
+.formGroup div input:focus ~ .underline::before,
+.formGroup .textArea textarea:focus ~ .underline::before {
+    transform: scale(1);
+    transition: var(--animation--trasition);
+}
+
+.underline {
+    width: 100%;
+    height: 1px;
+    position: relative;
+}
+
+.underline::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    background-color: var(--light-blackText);
+}
+
+.textArea .underline {
+    position: absolute;
+    margin-top: -5px;
+    width: 500px;
 }
 
 .formGroup .formBtn {
@@ -451,6 +491,10 @@ textarea {
         flex-wrap: wrap;
         justify-content: center;
     }
+    /* .formGroup {
+        width: 500px;
+        background-color: lightblue;
+    } */
     .formGroup .formBtn {
         margin-top: 5px;
     }
@@ -469,8 +513,8 @@ textarea {
     .projectsContainer a img {
         width: 260px;
     }
-    .pjCardsContainer div {
-        margin-top: 3%;
+    .pjCardBtns {
+        margin-top: 5px;
     }
 }
 
@@ -583,6 +627,9 @@ textarea {
     textarea {
         width: 480px;
     }
+    .textArea .underline {
+        width: 480px;
+    }
 }
 
 @media (max-width: 740px) {
@@ -616,7 +663,7 @@ textarea {
     .boxContainer, .formGroup {
         width: 500px;
     }
-    textarea {
+    textarea, .textArea .underline {
         width: 360px;
     }
     .formBtn {
@@ -667,7 +714,7 @@ textarea {
     .contactH3 h3 {
         font-size: 15px;
     }
-    textarea {
+    textarea, .textArea .underline {
         width: 95%;
     }
     .formBtn {

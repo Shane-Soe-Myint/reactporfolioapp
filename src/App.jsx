@@ -62,7 +62,7 @@ function App() {
 
             <div className="homeContainer" id="home">
                 <div className="navBar" ref={navBarMenuRef}>
-                    <h4>Logo Simple</h4>
+                    <h4 className="navLogo">Mr.Shane</h4>
 
                     <div className={`navBarMenu ${isNavBarVisible?"visible":"hidden"}`}>
                         <a href="#home"><h4>Home</h4></a>
@@ -100,7 +100,7 @@ function App() {
                             </h3>
                             <div className="moreAboutMe">
                                 <div className={`moreAboutP ${moreAbout?"visibleV":"hiddenH"}`}>
-                                    I succesed hight school but have not Degree, so i am English major that stoped first year.
+                                    I succesed hight school but have not Degree, because of i am English major that stoped first year.
                                 </div>
                             </div>
                         </div>

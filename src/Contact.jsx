@@ -82,6 +82,7 @@ export const Contact = () => {
                             autoComplete="none"
                             onChange={handleChange}
                         />
+                        <div className="underline"></div>
                             {error.firstName && <span>{error.firstName}</span>} 
                     </div>
                     <div>
@@ -93,6 +94,7 @@ export const Contact = () => {
                             autoComplete="none"
                             onChange={handleChange}
                         />
+                        <div className="underline"></div>
                             {error.lastName && <span>{error.lastName}</span>} 
                     </div>
                 </div>
@@ -106,12 +108,14 @@ export const Contact = () => {
                         autoComplete="off"
                         onChange={handleChange}
                     />
+                    <div className="underline"></div>
                         {error.email && <span>{error.email}</span>} 
                 </div>
 
                 <div className="textArea">
                     <label>Your Message</label>
                     <textarea  onChange={handleChange} name="textAreaName" placeholder="Please Enter Your Message"></textarea>
+                    <div className="underline"></div>
                     {error.textAreaName && <span>{error.textAreaName}</span>}
                 </div>
 

@@ -3,7 +3,7 @@ import img1 from "./images/movieslist.PNG";
 import img2 from "./images/shaneporfolio.PNG";
 import img3 from "./images/civilproject.PNG";
 import img4 from "./images/form.PNG";
-import img5 from "./images/reactporfolioapp.PNG";
+import img5 from "./images/reactporfolioapp.PNG"
 
 export const ProjectCards = () => {
   return (
