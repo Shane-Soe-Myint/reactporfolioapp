@@ -96,7 +96,7 @@ function App() {
                             <h3>
                                    I am learned from youtube html, css, js and Reactjs at 2020 to 2023.I am working photoshop job that this
                                 times my age is 29 years old now 32 years old, now i have photoshop design job but i am wanted settled down frontend web development,
-                                also need junior frontend web developer job for me.(apologize for my bad English skill)
+                                also need junior frontend web developer job for me that expected upper 300000 MMK.(apologize for my bad English skill)
                             </h3>
                             <div className="moreAboutMe">
                                 <div className={`moreAboutP ${moreAbout?"visibleV":"hiddenH"}`}>
