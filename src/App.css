@@ -184,6 +184,11 @@ body {
     padding: 0 35px;
 }
 
+.projectsContainer .cardOne {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--color-textLightGray);
+}
+
 .projectsContainer h1 {
     font-size: var(--seconds-bigText);
     color: var(--light-blackText);
