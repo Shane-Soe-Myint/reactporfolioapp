@@ -4,6 +4,7 @@ import img2 from "./images/shaneporfolio.PNG";
 import img3 from "./images/civilproject.PNG";
 import img4 from "./images/form.PNG";
 import img5 from "./images/reactporfolioapp.PNG"
+import img6 from "./images/reactbeginnercourse.PNG";
 
 export const ProjectCards = () => {
   return (
@@ -99,6 +100,25 @@ export const ProjectCards = () => {
                 This react porfolio project is really not good but i am try.
                 This project is over 15 days that one day 1.5hours beacuse of
                 i have job photoshop design, i am writted when my age is 32 years old.
+                I wanted to Fronted web developer job.
+            </span>
+          </div>
+
+          <div className="cardOne">
+            <a href="https://reactbeginnercourse.netlify.app/">
+                <img src={img6} alt="img6"/>
+            </a>
+
+            <div className="pjCardBtns">
+              <a href="https://github.com/Shane-Soe-Myint/reactbeginnercourse"><button>Source Code</button></a>
+              <a href="https://reactbeginnercourse.netlify.app/"><button>Live</button></a>
+            </div>
+
+            <h1>React Porfolio App <i className="fa-brands fa-react"></i></h1>
+            <span>
+                This react porfolio project is really not good but i am try.
+                This project is over 1 months over that one day 1.5hours beacuse of
+                i have job photoshop design, i am writted when my age is near 33 years old.
                 I wanted to Fronted web developer job.
             </span>
           </div>
