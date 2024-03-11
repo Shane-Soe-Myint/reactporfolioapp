@@ -114,7 +114,7 @@ export const ProjectCards = () => {
               <a href="https://reactbeginnercourse.netlify.app/"><button>Live</button></a>
             </div>
 
-            <h1>React Porfolio App <i className="fa-brands fa-react"></i></h1>
+            <h1>React Beginner Course <i className="fa-brands fa-react"></i></h1>
             <span>
                 This react porfolio project is really not good but i am try.
                 This project is over 1 months over that one day 1.5hours beacuse of
