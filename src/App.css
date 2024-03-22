@@ -72,6 +72,53 @@ body {
     /* bottom: 150px; */
 }
 
+/* ---------------------------CV Form------------------------------------ */
+
+.cvBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.downloadCV {
+    right: 80px;
+}
+
+.myCVcontainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 490vh;
+    background-color: rgba(163, 162, 162, 0.747);
+    transform: scale(0);
+    transition: var(--animation--trasition);
+    z-index: 2;
+}
+
+.myCv {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 490vh;
+    background-color: rgba(163, 162, 162, 0.747);
+    transition: var(--animation--trasition);
+    z-index: 2;
+}
+
+.myCv img {
+    position: absolute;
+    top: 100px;
+    /* left: 30%; */
+    width: 600px;
+    height: 850px;
+}
 /* ---------------------------Home------------------------------------ */
 
 .homeColor {
@@ -107,11 +154,13 @@ body {
 
 .postFlow {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 15px;
 }
 
 .postFlow h4 {
     margin-right: 30px;
+    margin-bottom: 10px;
     word-spacing: 5px;
 }
 
@@ -408,7 +457,7 @@ textarea {
     height: 450px;
     background-color: var(--light-blackText);
     border-radius: 10px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     margin-top: -10px;
     padding: 70px;
     color: #fff;
@@ -482,6 +531,10 @@ textarea {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 3%;
     }
+    .myCv img {
+        width: 420px;
+        height: 600px;
+    }
 }
 
 @media (max-width: 1117px) {
@@ -496,10 +549,6 @@ textarea {
         flex-wrap: wrap;
         justify-content: center;
     }
-    /* .formGroup {
-        width: 500px;
-        background-color: lightblue;
-    } */
     .formGroup .formBtn {
         margin-top: 5px;
     }
@@ -702,7 +751,7 @@ textarea {
 
 @media (max-width: 513px) {
     .contactLabel {
-        width: 400px;
+        width: auto;
         margin: auto;
         text-align: center;
     }
@@ -738,9 +787,16 @@ textarea {
     }
 }
 
-@media (max-width: 377px) {
+@media (max-width: 444px) {
+    .myCv img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* @media (max-width: 377px) {
     .contactContainer {
         margin-left: 90px;
     }
-}
+} */
 

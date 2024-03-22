@@ -27,7 +27,7 @@ export const ProjectCards = () => {
                 This my Movies Project but it is not finished
                 beacuse i am working Photoshop Designer that
                 full time.You will need VPN internet for enter
-                it is.(Sorry, i am bed English speaking)
+                it is.(Sorry, i am bad English speaking)
             </span>
           </div>
 

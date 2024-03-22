@@ -3,6 +3,9 @@ import { Contact } from "./Contact";
 import {ProjectCards} from "./Projects";
 import { Footer } from "./Footer";
 import shane from "./images/shane.png";
+// import {CV} from "./CV";
+import cv from "./images/CVMyanmar.jpg";
+import cvPdf from "./images/CVMyanmarPDF.pdf";
 
 function App() {
     const [isNavBarVisible, setIsNavBarVisible] = useState(true);
@@ -58,7 +61,11 @@ function App() {
 
     return (
         <div>
-
+            <div className={`myCv ${isFollow?null:"myCVcontainer"}`}>
+                <a href={cvPdf} download><button className="cvBtn followBtn downloadCV"><i class="fa-solid fa-arrow-down"></i></button></a>
+                <button className="cvBtn followBtn" onClick={followBtnClick}>X</button>
+                <img src={cv} />
+            </div>
 
             <div className="homeContainer" id="home">
                 <div className="navBar" ref={navBarMenuRef}>
@@ -82,14 +89,15 @@ function App() {
                         <div className="homeNameBtn">
                             <h1>Shane Soe Myint</h1>
                             <button className="followBtn" onClick={followBtnClick}>
-                                {isFollow? 'Unfollow' : 'Follow'}
+                                View CV
                             </button>
                         </div>
 
                         <div className="postFlow">
-                            <h4>50 <span>Posts</span></h4>
-                            <h4>1.1k <span>Followsers</span></h4>
-                            <h4>50 <span>Following</span></h4>
+                            <h4>Html <span>(Middle Level)</span> <i style={{color:"#E86228"}} className="fa-brands fa-html5"></i></h4>
+                            <h4>Css <span>(Middle Level)</span> <i style={{color:"#2862E9"}} className="fa-brands fa-css3-alt"></i></h4>
+                            <h4>Js <span>(Middle Level)</span> <i style={{color:"#E8D44D"}} className="fa-brands fa-js"></i></h4>
+                            <h4>Reactjs <span>(Middle Level)</span> <i style={{color:"#5ED4F3"}} className="fa-brands fa-react"></i></h4>
                         </div>
 
                         <div className="homeP">
@@ -111,6 +119,10 @@ function App() {
                     </div>
                 </div>
             </div>
+
+            {/* <div className={`myCVcontainer ${isFollow?"myCVcontianerView":null}`}>
+                <CV />
+            </div> */}
 
             <div className="projectCardsContainer" id="projects">
                 <ProjectCards />
